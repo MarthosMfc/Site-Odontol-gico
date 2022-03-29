@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Agendamentos</title>
+		<meta name="author" content="Marthos Morilha"/>
+		<meta name="keywords" content="Dentista, Dentista em Brasília, Clínica Odontologia, Odontologia "/>
+		<meta name="description" content="Clínica Odontologica em Brasília">
+		<link rel="stylesheet" type="text/css" href="estilo.css"/>
+	</head>
+	<body>
+		<header>
+		<img src="img/ClínicaMeuSorriso.png" alt="Banner contendo uma mulher sorrindo">
+		</header>
+		<nav>
+				<a class="a-menu" href="#"> Página Inicial </a>
+				<a class="a-menu" href="#pag-nossosprocedimentos"> Nossos Procedimentos </a>
+				<a class="a-menu" href="#pag-apresentaçao"> Apresentação</a>
+				<a class="a-menu" href="agendar.html">  Agendar</a>
+		</nav>
+		 
+
+		<section id="pag-agendamentos">
+		<h1>Agendamentos</h1>
+		
+	
+			<p>Agende sua consulta aqui!<p/>
+			<form name="" method="" action="">
+				<label for="nome">Nome:</label><br/>
+				<input type="text" name="nome_completo" id="nome" size="" placeholder="Digite seu nome completo" required="true" autofocus="" /><br/>
+
+				<label for="E-mail">E-mail:</label><br/>
+				<input id="E-mail" type="Email" name="E-mail" size="" placeholder="nomedeusuario@email.com"/><br/>
+
+				<label for="senha">Senha:</label><br/>
+				<input id="senha" type="password" name="" placeholder="Digite sua senha" size=""><br/>
+
+				<label for="cel">Celular</label><br/>
+				<input id="Celular" type="tel" size= "" name="Celular" placeholder="(99)99999-9999" pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$"/
+				><br/><br/>
+
+				<div id="data-hora-sessões">
+					<div>
+						<label for="data">Data:</label>
+						<input id="data" type="date" name="data"/>
+					</div>
+					<div>
+						<label for="hora">Hora:</label>
+						<input id="hora" type="time" name="Hora"/>
+					</div>
+					<div>
+						<label for="Sessões">Sessões:</label>
+						<input id="sassões" type="number" name="Sessões" min="1" max="10" step="1"/>
+					</div>
+				</div>
+				<label for="nivel">Nível de Urgência</label>
+				<select id="nivel" name="nivel">
+					<option value="">Selecione:</option>
+					<option value="baixa">Baixa Urgência</option>
+					<option value="media">Média Urgência</option>
+					<option value="extrema">Extrema Urgência</option>
+				</select><br/>
+
+				<fieldset>
+				<legend>Gênero:</legend>				
+				<input type="radio" name="genero" value="Masc" id="masc"/> <label for="masc">Masculino</label><br/>
+				<input type="radio" name="genero" value="Fem" id="fem"/> <label for="fem">Feminino</label>
+				</fieldset>
+
+				<fieldset>
+					<legend>Atendimentos:</legend>
+					<input id="Odon" type="checkbox" name="Atendimentos" value="Odontopediatria" /> <label for="Odon">Odontopediatria</label>
+					<input id="Orto" type="checkbox" name="Atendimentos" value="Ortodontia" /> <label for="Orto">Ortodontia</label>
+					<input id="Impl" type="checkbox" name="Atendimentos" value="Implantodontia" /> <label for="Impl">Implantodontia</label>
+					<input id="Endo" type="checkbox" name="Atendimentos" value="Endodontia" /> <label for="Endo">Endodontia</label><br/>
+					<input id="Outr" type="checkbox" name="Atendimentos" value="Outro" /> <label for="Outr">Outro</label>
+				</fieldset>
+
+				<label for="msg">Mensagem</label><br/>
+				<textarea id="msg" cols="54" rows="4">
+					
+				</textarea>
+
+				<div id="botoes-form">
+				<input type="submit" name="btn-agendar" value="AGENDAR">
+				<input type="reset" name="btn-cancelar" value="CANCELAR">
+				</div>
+
+			</form>
+			</section>
+
+			
+			<footer>
+					<p align="center">Desenvolvido por <a href="http://intagram.com/marthos_mfc" target="_blank">Marthos Morilha</a> - 2021</p>
+				</footer>
+		</font>
+	</body>
+</html>
